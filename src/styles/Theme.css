@@ -30,10 +30,6 @@
 .custom-bg-dark3 {
   @apply bg-customDarkBg3  fill-customDarkBg3;
 }
-body,
-html {
-  @apply bg-customDarkBg2;
-}
 
 /* Borders */
 
@@ -47,7 +43,7 @@ html {
 /* Buttons */
 
 .custom-button-colored {
-  @apply rounded-lg font-bold bg-customPrimary text-white flex justify-center items-center hover:bg-[#7274f3] cursor-pointer transition;
+  @apply  font-bold bg-white text-black flex justify-center items-center hover:bg-[#7274f3] cursor-pointer transition;
 }
 
 /* Navbar */
