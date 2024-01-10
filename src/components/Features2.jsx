@@ -5,6 +5,7 @@ import feature6 from "../assets/images/feature6.jpg";
 import { CheckArrowIcon } from "../assets/icons/CheckArrowIcon";
 import { LuChefHat } from "react-icons/lu";
 import { GiCampCookingPot } from "react-icons/gi";
+import { IoMdCheckmarkCircleOutline } from "react-icons/io";
 
 export const Features2 = () => (
   <section className="w-full mt-12 sm:mt-20 lg:my-20 pt-4">
@@ -32,8 +33,9 @@ export const Features2 = () => (
               PROGRAMAR CITA A CONVENIR PARA ENTREGAR LA MERCADERÍA
             </li>
           </ol>
-          <h3 className="mb-10 font-bold text-4xl mx-auto mt-[7rem]">
-            ¡Y LISTO! A DELEITAR
+          <h3 className="mb-10 font-bold text-4xl mx-auto mt-[7rem] text-center ">
+            ¡Y LISTO! <br />
+            <IoMdCheckmarkCircleOutline className="h-32 w-32 mx-auto pt-10" />
           </h3>
         </div>
       </div>
