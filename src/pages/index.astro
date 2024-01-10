@@ -12,14 +12,16 @@ import { Brands } from "../components/Brands.jsx";
 import { Divider } from "../components/Divider";
 import { Footer } from "../components/Footer.jsx";
 import { ScrollUpButton } from "../components/ScrollUpButton";
+import Combos from "../components/Combos"
 import "../styles/Theme.css";
 import "../styles/Diagonals.css";
 
 ---
 
 <Layout title="Tailcast">
-  <Navbar client:load />
+  <!-- <Navbar client:load /> -->
   <Hero client:load />
+  <Combos client:load />
   <Features1 client:load />
   <!-- <Divider /> -->
   <Features2 client:load />

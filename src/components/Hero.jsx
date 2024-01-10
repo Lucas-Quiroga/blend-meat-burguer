@@ -1,8 +1,6 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
-import { LuChefHat } from "react-icons/lu";
 import { InvitationModal } from "./InvitationModal";
-import { GiCampCookingPot } from "react-icons/gi";
 import dashboard from "../assets/images/dashboard.jpg";
 
 export const Hero = () => {
@@ -10,7 +8,7 @@ export const Hero = () => {
 
   return (
     <section
-      className="w-screen  flex justify-center items-center bg-customDarkBg1 mb-[28vw] md:mb-[18vw] lg:mb-[10vw] xl:mb-[13vw] 2xl:mb-60 hero-bg-gradient pb-24 sm:pb-32 md:pb-44 lg:pb-0"
+      className="flex bg-[url('https://res.cloudinary.com/dncmrwppr/image/upload/v1704826511/image4_rd9qda.jpg')] h-screen bg-cover place-items-center justify-center items-center"
       id="home"
     >
       <div className="w-full md:w-[800px] xl:w-[900px] flex flex-col justify-center items-center pt-16 md:pt-16 lg:pt-20 text-center">
@@ -28,9 +26,11 @@ export const Hero = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.05 }}
         >
-          <div className="text-5xl sm:text-6xl lg:text-7xl xl:text-7xl font-bold tracking-wide  text-white  px-8 sm:px-8 md:px-20 lg:px-4">
+          <div className="text-5xl sm:text-6xl lg:text-7xl xl:text-8xl font-bold tracking-wide  text-white  px-8 sm:px-8 md:px-20 lg:px-4">
             <span className="inline md:hidden">Analytics</span>
-            <span className="hidden md:inline mt-10">BLEND MEAT BURGUER</span>
+            <span className="hidden md:inline mt-0 leading-tight letter-spacing whitespace-nowrap">
+              BLEND MEAT BURGUER
+            </span>
           </div>
         </motion.div>
         <motion.div
@@ -70,31 +70,6 @@ export const Hero = () => {
             />
           </div>
         </motion.div> */}
-        <motion.div
-          initial={{ opacity: 0, y: 10, zIndex: 20 }}
-          animate={{ opacity: 1, y: 0, zIndex: 20 }}
-          transition={{ duration: 0.5, delay: 0.15 }}
-        >
-          <div className="relative w-screen flex justify-center bg-white h-screen">
-            <div className="flex justify-center flex-col mx-auto">
-              <h3 className="mb-10 font-bold text-4xl">
-                <LuChefHat className="relative ml-12 -rotate-12" /> NUESTROS
-                BLENDS
-              </h3>
-
-              <ol className="flex flex-col gap-2 list-decimal font-semibold text-xl">
-                <li className="ml-4">ROAST BEEF + TAPA DE ASADO</li>
-                <li className="ml-4 pl-6">
-                  ROAST BEEF + OJO DE BIFE + BIFE DE CHORIZO
-                </li>
-                <li className="ml-4">OJO DE BIFE + BIFE DE CHORIZO</li>
-                <li className="ml-4">ROAST BEEF + VACÍO</li>
-                <li className="ml-4">ROAST BEEF + TAPA DE ASADO + VACIO</li>
-              </ol>
-              <GiCampCookingPot className="w-56 h-80 mx-auto" />
-            </div>
-          </div>
-        </motion.div>
       </div>
       {isModalOpen && (
         <InvitationModal isOpen={isModalOpen} setIsOpen={setIsModalOpen} />
