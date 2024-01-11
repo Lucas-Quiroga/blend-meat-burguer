@@ -19,17 +19,26 @@ export const Features1 = () => {
         transition={{ duration: 0.5, delay: 0.2 }}
       >
         <div className="h-screen">
-          <div className="relative ml-[8rem] mb-[5rem] top-[10rem]">
+          <div className="relative text-center mt-[10rem] sm:ml-[8rem] sm:mb-[5rem] sm:top-[10rem]">
             <span className="text-white text-5xl font-semibold">COMBOS</span>
-            <p className="text-white text-xl">LO HACEMOS SIMPLE</p>
+            <p className="text-white text-sm relative sm:left-9">
+              LO HACEMOS SIMPLE
+            </p>
+            <div className="absolute hidden sm:block top-0 left-0">
+              <img
+                src="https://res.cloudinary.com/dncmrwppr/image/upload/v1705005350/logo-removebg-preview_e0khrf.png"
+                alt="logo"
+                className="w-64"
+              />
+            </div>
           </div>
-          <div className="flex gap-10 justify-end mr-[14rem]">
+          <div className="flex mt-[8rem] sm:mt-0 sm:gap-10 sm:justify-end sm:mr-[14rem]">
             <div>
               <a href="#" className="block">
                 <img
                   alt="Art"
                   src="https://res.cloudinary.com/dncmrwppr/image/upload/v1704922273/image3_jhaji0.jpg"
-                  className="h-64 w-full object-cover sm:h-80 lg:h-[30rem]"
+                  className="h-64 w-full object-cover sm:h-80 lg:h-[35rem]"
                 />
 
                 <h3 className="mt-4 text-lg font-bold text-white sm:text-xl underline text-center">
@@ -46,7 +55,7 @@ export const Features1 = () => {
                 <img
                   alt="Art"
                   src="https://res.cloudinary.com/dncmrwppr/image/upload/v1704922133/image1_fyhofo.jpg"
-                  className="h-64 w-full object-cover sm:h-80 lg:h-[30rem]"
+                  className="h-64 w-full object-cover sm:h-80 lg:h-[35rem]"
                 />
 
                 <h3 className="mt-4 text-lg font-bold text-white sm:text-xl underline text-center">
@@ -61,7 +70,7 @@ export const Features1 = () => {
                 <img
                   alt="Art"
                   src="https://res.cloudinary.com/dncmrwppr/image/upload/v1704922180/image2_hk9nmd.jpg"
-                  className="h-64 w-full object-cover sm:h-80 lg:h-[30rem]"
+                  className="h-64 w-full object-cover sm:h-80 lg:h-[35rem]"
                 />
 
                 <h3 className="mt-4 text-lg font-bold text-white sm:text-xl underline text-center">

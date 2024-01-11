@@ -1,7 +1,6 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
 import { InvitationModal } from "./InvitationModal";
-import dashboard from "../assets/images/dashboard.jpg";
 
 export const Hero = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -16,20 +15,15 @@ export const Hero = () => {
           initial={{ opacity: 0, y: 10 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
-        >
-          <div className="text-customSecondary text-sm sm:text-base  mb-6 sm:mt-32 mt-16  font-bold">
-            Discover new data flow
-          </div>
-        </motion.div>
+        ></motion.div>
         <motion.div
           initial={{ opacity: 0, y: 10 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.05 }}
         >
-          <div className="text-5xl sm:text-6xl lg:text-7xl xl:text-8xl font-bold tracking-wide  text-white  px-8 sm:px-8 md:px-20 lg:px-4">
-            <span className="inline md:hidden">Analytics</span>
-            <span className="hidden md:inline mt-0 leading-tight letter-spacing whitespace-nowrap">
-              BLEND MEAT BURGUER
+          <div className=" bg-black  font-bold tracking-wide  text-white  px-8 sm:px-8 md:px-20 lg:px-4 text-center mx-auto justify-center">
+            <span className="text-7xl sm:text-8xl md:text-10xl lg:text-7xl xl:text-8xl md:inline mt-0 lg:leading-tight lg:letter-spacing lg:whitespace-nowrap text-center mx-auto justify-center">
+              BLEND MEAT BURGER
             </span>
           </div>
         </motion.div>
@@ -50,7 +44,7 @@ export const Hero = () => {
         >
           <div className="flex flex-col gap-2 sm:flex-row mt-14 mb-24 sm:mb-40 justify-center">
             <div
-              className="custom-button-colored mt-20 w-64 sm:w-52 h-12 mr-0 sm:mr-4 lg:mr-6 mb-2 sm:mb-0"
+              className="custom-button-colored text-sm sm:mt-20 w-36 h-12 sm:w-52  sm:h-12 mr-0 sm:mr-4 lg:mr-6 mb-2 sm:mb-0 "
               onClick={() => setIsModalOpen(true)}
             >
               ¡ÚNETE A NOSOTROS!
