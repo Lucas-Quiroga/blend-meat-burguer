@@ -10,7 +10,7 @@ import { BsCashCoin } from "react-icons/bs";
 import { SiMercadopago } from "react-icons/si";
 import { AiTwotoneBank } from "react-icons/ai";
 
-export const Brands = () => (
+export const PaymentMethods = () => (
   <section className="py-12 sm:py-24 bg-white w-full mt-16 mb-16">
     <motion.div
       initial={{ opacity: 0 }}
@@ -26,7 +26,7 @@ export const Brands = () => (
         />
       </div>
       <div className="container px-4 mx-auto 2xl:w-[1200px] xl:w-[1100px] lg:w-[1000px] md:w-4/5">
-        <div className="flex lg:flex-row flex-col items-center -mx-4 justify-center lg:text-left text-center sm:gap-[6rem]">
+        <div className="flex xl:flex-row flex-col items-center -mx-4 justify-center xl:text-left text-center sm:gap-[6rem]">
           <div className="w-full lg:w-1/2 px-4 mb-12 lg:mb-0">
             <div className="flex flex-col">
               <h2 className="mb-2 text-4xl sm:text-5xl 2xl:text-6xl font-bold tracking-normal text-black">
@@ -34,7 +34,7 @@ export const Brands = () => (
               </h2>
             </div>
           </div>
-          <div className="w-2/3 sm:w-[620px] lg:w-1/2 mx-auto lg:mx-0 lg:pl-10">
+          <div className="w-2/3 sm:w-[620px] lg:w-[700px] mx-auto lg:mx-0 lg:pl-10">
             <div className="flex flex-wrap sm:-m-4">
               <div className="w-full sm:w-1/3 py-6 flex flex-col justify-center items-center">
                 <BsCashCoin className="h-32 w-32" />
