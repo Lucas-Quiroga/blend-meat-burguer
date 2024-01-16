@@ -19,7 +19,7 @@ const contactData = [
     rel: "noopener noreferrer",
     Icon: FaInstagram,
     title: "INSTAGRAM",
-    description: "@BLEND_MEET_BURGER",
+    description: "@blend_meat_burger",
   },
   {
     href: "mailto:blendmeatburger@gmail.com",
@@ -30,7 +30,7 @@ const contactData = [
   {
     Icon: CiLocationOn,
     title: "UBICACIÓN",
-    description: "CIUDAD MADERO - LA MATANZA",
+    description: "Ciudad Madero - La Matanza",
   },
 ];
 

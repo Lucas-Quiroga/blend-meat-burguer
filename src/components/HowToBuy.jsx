@@ -25,15 +25,15 @@ export const HowToBuy = () => (
             ¿CÓMO HAGO MI COMPRA?
           </h3>
 
-          <ol className="flex flex-col  gap-5 xl:gap-2 sm:list-decimal font-semibold text-xl lg:text-2xl">
-            <li className="ml-4 lg:ml-10">
+          <ol className="flex flex-col mx-auto justify-center gap-5 xl:gap-2 list-decimal font-semibold text-md sm:text-xl lg:text-2xl">
+            <li className="ml-7 lg:ml-10">
               COMUNÍCATE CON NOSOTROS VÍA WHATSAPP O INSTRAGRAM
             </li>
-            <li className="ml-4 lg:ml-10 ">DETÁLLANOS TU PEDIDO</li>
-            <li className="ml-4 lg:ml-10">
+            <li className="ml-7 lg:ml-10 ">DETÁLLANOS TU PEDIDO</li>
+            <li className="ml-7 lg:ml-10">
               HACER EL PEDIDO CON MÍNIMO 12 HORAS DE ANTICIPACIÓN
             </li>
-            <li className="ml-4 lg:ml-10">
+            <li className="ml-7 lg:ml-10">
               PROGRAMAR CITA A CONVENIR PARA ENTREGAR LA MERCADERÍA
             </li>
           </ol>

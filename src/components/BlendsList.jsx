@@ -53,9 +53,9 @@ const Combos = () => {
 
             <GiCampCookingPot className="w-48 h-36 mt-10 sm:mt-0 sm:w-56 sm:h-80 mx-auto" />
 
-            <div className="text-center mt-10 hidden sm:block">
-              <span className=" text-sm  sm:text-lg flex items-center gap-2 bg-gray-300 rounded-lg py-2 px-2 sm:px-2 sm:py-2 sm:mx-auto">
-                <CiCircleInfo className="hidden sm:block h-10 sm:w-10 " />
+            <div className="text-center mt-10 block z-10">
+              <span className=" text-sm sm:text-lg flex items-center gap-2 bg-gray-300 sm:rounded-lg py-2 px-2 sm:px-2 sm:py-2 sm:mx-auto">
+                <CiCircleInfo className=" h-10 sm:w-10 hidden sm:block" />
                 ¿Sabías que podés hacer tu blend personalizado? <br />
                 Coméntanos tus tipos de carne ideal y te cotizamos.
               </span>
@@ -69,7 +69,7 @@ const Combos = () => {
             />
           </div>
         </div>
-        <div className="custom-shape-divider-bottom-1705353350">
+        <div className="custom-shape-divider-bottom-1705353350 hidden sm:block">
           <svg
             data-name="Layer 1"
             xmlns="http://www.w3.org/2000/svg"
