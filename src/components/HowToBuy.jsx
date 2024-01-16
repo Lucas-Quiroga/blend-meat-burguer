@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { IoMdCheckmarkCircleOutline } from "react-icons/io";
+import { IoMdCheckmarkCircleOutline } from "react-icons/io/index";
 import "../styles/Combos.css";
 
 const LOGO_URL =
