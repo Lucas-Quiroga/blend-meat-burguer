@@ -1,39 +1,24 @@
-# Tailcast
+# BLEND MEAT BURGER 🍔
 
-Dark themed website template built on AstroJS, designed for technological startup business.
+This website is dedicated to offer a service of blends and meat products. Here you will find detailed information about the variety of products and how to contact them.
 
-## Tech stack:
+## Preview image 👁
 
-Astro, React, Tailwind, Framer Motion
+![app](./src/assets/images/pfirst.jpg)
 
-## Live link
-[https://tailcast.vercel.app/](https://tailcast.vercel.app/)
+## Deployment 📦
 
-##  Project Structure
+- [DEMO]() - Website
 
-```
-├── public/
-│   └── favicon.svg
-├── src/
-│   ├── assets
-│   │   ├── icons
-│   │   ├── images
-│   │   └── logos
-│   ├── components
-│   ├── layouts
-│   ├──  pages
-│   └── styles
-└── package.json
-```
+## Built With 🛠️
 
-##  How to run
+- Frontend: Astro, Tailwind, React.js
 
-All commands are run from the root of the project, from a terminal:
+## Authors ✒️
 
-| Command                | Action                                             |
-| :--------------------- | :------------------------------------------------- |
-| `npm install`          | Installs dependencies                              |
-| `npm run dev`          | Starts local dev server at `localhost:3000`        |
-| `npm run build`        | Build your production site to `./dist/`            |
-| `npm run preview`      | Preview your build locally, before deploying       |
+- **Matthew** - _Template_ - [Matthew](https://github.com/matt765)
+- **Lucas Quiroga** - _Initial work_ - [Lucas Quiroga](https://github.com/Lucas-Quiroga)
 
+## License 📄
+
+This project is licensed © MIT, 2024.

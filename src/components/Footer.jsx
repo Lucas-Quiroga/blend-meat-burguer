@@ -1,77 +1,88 @@
-import { FacebookIcon } from "../assets/icons/FacebookIcon";
+import { CiMail } from "react-icons/ci";
 import { InstagramIcon } from "../assets/icons/InstagramIcon";
-import { TailcastLogo } from "../assets/logos/TailcastLogo";
-import { TwitterIcon } from "../assets/icons/TwitterIcon";
+import { FaWhatsapp } from "react-icons/fa";
 
 const footerData = [
+  { label: "Inicio", href: "#inicio", ariaLabel: "Inicio" },
+  { label: "Blends", href: "#blends", ariaLabel: "Blends" },
+  { label: "Combos", href: "#combos", ariaLabel: "Combos" },
+  { label: "Comprar", href: "#comprar", ariaLabel: "Comprar" },
+  { label: "Contacto", href: "#contacto", ariaLabel: "Contacto" },
+];
+
+const socialMediaLinks = [
   {
-    title: "Products",
-    items: ["Services", "About Us", "News and Stories", "Roadmap"],
+    label: "Whatsapp",
+    href: "https://api.whatsapp.com/send?phone=541138501335&text=Hola%20estoy%20interesadx%20en%20sus%20servicios%20😊",
+    ariaLabel: "Whatsapp",
+    icon: (
+      <span className="text-2xl">
+        <FaWhatsapp />
+      </span>
+    ),
   },
   {
-    title: "Important Links",
-    items: [
-      "Organization Team",
-      "Our Journeys",
-      "Pricing Plans",
-      "Roadmap",
-      "Terms & Conditions",
-      "Privacy Policy",
-    ],
+    label: "Instagram",
+    href: "https://www.instagram.com/blend_meat_burger",
+    ariaLabel: "Instagram",
+    icon: (
+      <span className="text-2xl">
+        <InstagramIcon />
+      </span>
+    ),
   },
   {
-    title: "Company",
-    items: ["About Us", "Jobs", "Press", "Contact Us"],
+    label: "Email",
+    href: "mailto:blendmeatburger@gmail.com",
+    ariaLabel: "Email",
+    icon: (
+      <span className="text-2xl">
+        <CiMail />
+      </span>
+    ),
   },
 ];
 
 export const Footer = () => {
   return (
     <footer>
-      <div className="pt-10  lg:pt-20 lg:pb-12 bg-customDarkBg1 radius-for-skewed ">
-        <div className="container mx-auto px-4 w-4/5 md:w-11/12 lg:w-10/12 xl:w-4/5 2xl:w-2/3">
-          <div className="flex flex-wrap">
-            <div className="w-full flex justify-center mx-auto items-center">
-              <div className="flex justify-center lg:justify-start items-center grow basis-0">
-                <div className="text-white mr-2 text-6xl">
-                  <img
-                    src="https://res.cloudinary.com/dncmrwppr/image/upload/v1705005350/logo-removebg-preview_e0khrf.png"
-                    alt="logo"
-                    className="w-32"
-                  />
-                </div>
-                <div className="text-white font-['Inter'] font-bold text-xl">
-                  Blend Meat Burger
-                </div>
+      <section class="bg-customDarkBg1 ">
+        <div class="max-w-screen-xl px-4 py-12 mx-auto space-y-8 overflow-hidden sm:px-6 lg:px-8">
+          <nav class="flex flex-wrap justify-center -mx-5 -my-2">
+            {footerData.map(({ href, label, ariaLabel }) => (
+              <div class="px-5 py-2">
+                <a
+                  href={href}
+                  aria-label={ariaLabel}
+                  key={label}
+                  class="text-base leading-6 text-white hover:text-gray-400"
+                >
+                  {label}
+                </a>
               </div>
+            ))}
+          </nav>
 
-              <div className="w-36 mx-auto lg:mx-0">
+          <div class="flex justify-center mt-8 space-x-6 items-center mx-auto">
+            {socialMediaLinks.map(({ href, label, ariaLabel, icon }) => (
+              <>
+                <span class="sr-only">{label}</span>
                 <a
-                  className="inline-block w-10  h-10 mr-2 p-2 bg-customDarkBg2 custom-border-gray  hover:bg-gray-700 rounded-xl"
-                  href="#"
+                  href={href}
+                  aria-label={ariaLabel}
+                  key={label}
+                  class="text-base leading-6 text-white hover:text-gray-400"
                 >
-                  <FacebookIcon />
+                  {icon}
                 </a>
-                <a
-                  className="inline-block w-10  h-10 mr-2 p-2 bg-customDarkBg2 custom-border-gray  hover:bg-gray-700 rounded-xl"
-                  href="#"
-                >
-                  <TwitterIcon />
-                </a>
-                <a
-                  className="inline-block w-10  h-10 mr-2 p-2 bg-customDarkBg2 custom-border-gray  hover:bg-gray-700 rounded-xl"
-                  href="#"
-                >
-                  <InstagramIcon />
-                </a>
-              </div>
-            </div>
+              </>
+            ))}
           </div>
-          <p className="lg:text-center text-sm text-gray-400 border-t border-[rgb(255,255,255,0.2)] pt-12 mt-16 hidden lg:block">
-            &copy; 2022. MIT license.
+          <p class="mt-8 text-base leading-6 text-center text-gray-400">
+            ©2024 MIT license. Matthew and Quiroga Lucas.
           </p>
         </div>
-      </div>
+      </section>
     </footer>
   );
 };
