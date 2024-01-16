@@ -3,7 +3,7 @@ import { IoIosArrowDown } from "react-icons/io/index";
 
 const AnimatedScrollDownArrow = () => {
   return (
-    <div className="flex justify-center items-center mx-auto">
+    <div className="hidden sm:flex justify-center items-center mx-auto">
       <IoIosArrowDown
         className=" animate-bounce absolute top-[80%] h-20 w-20 "
         color="white"

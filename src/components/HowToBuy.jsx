@@ -21,7 +21,7 @@ export const HowToBuy = () => (
       </div>
       <div className=" w-screen flex justify-center mx-auto bg-white h-screen">
         <div className="flex justify-center flex-col mx-auto">
-          <h3 className=" text-2xl mt-10 sm:text-4xl mb-16 font-bold lg:text-7xl text-center">
+          <h3 className=" text-2xl sm:mt-10 sm:text-4xl mb-16 font-bold lg:text-7xl text-center">
             ¿CÓMO HAGO MI COMPRA?
           </h3>
 
@@ -37,9 +37,9 @@ export const HowToBuy = () => (
               PROGRAMAR CITA A CONVENIR PARA ENTREGAR LA MERCADERÍA
             </li>
           </ol>
-          <h3 className="mb-10 font-bold text-2xl sm:text-4xl mx-auto mt-[7rem] text-center ">
+          <h3 className=" mb-10 font-bold text-2xl sm:text-4xl mx-auto mt-[3rem] sm:mt-[5rem] text-center ">
             ¡Y LISTO! <br />
-            <IoMdCheckmarkCircleOutline className="h-20 w-20 sm:h-32 sm:w-32 mx-auto pt-10" />
+            <IoMdCheckmarkCircleOutline className="hidden sm:block h-20 w-20 sm:h-32 sm:w-32 mx-auto pt-10" />
           </h3>
         </div>
       </div>
