@@ -7,7 +7,7 @@ const LOGO_URL =
 
 export const HowToBuy = () => (
   <section
-    className="relative h-screen w-full  sm:mt-0  mx-auto flex flex-col justify-center"
+    className="relative h-screen w-full  sm:mt-0  mx-auto flex flex-col justify-center overflow-x-hidden overflow-y-hidden"
     id="comprar"
   >
     <motion.div
@@ -16,25 +16,12 @@ export const HowToBuy = () => (
       viewport={{ once: true }}
       transition={{ duration: 0.5, delay: 0.2 }}
     >
-      <div className="custom-shape-divider-top-1705354012">
-        <svg
-          data-name="Layer 1"
-          xmlns="http://www.w3.org/2000/svg"
-          viewBox="0 0 1200 120"
-          preserveAspectRatio="none"
-        >
-          <path
-            d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"
-            className="shape-fill"
-          ></path>
-        </svg>
-      </div>
       <div className="absolute hidden xl:block lg:right-0  xl:mt-[30rem]">
         <img src={LOGO_URL} alt="logo" className="w-64" />
       </div>
       <div className=" w-screen flex justify-center mx-auto bg-white h-screen">
         <div className="flex justify-center flex-col mx-auto">
-          <h3 className="text-2xl mt-10 sm:text-4xl mb-16 font-bold lg:text-7xl text-center">
+          <h3 className=" text-2xl mt-10 sm:text-4xl mb-16 font-bold lg:text-7xl text-center">
             ¿CÓMO HAGO MI COMPRA?
           </h3>
 

@@ -1,15 +1,5 @@
 #inicio {
     overflow: hidden;
+    background: url('https://res.cloudinary.com/dncmrwppr/image/upload/v1704826511/image4_rd9qda.jpg') center center/cover no-repeat;
   }
   
-  #inicio::before {
-    content: "";
-    position: absolute;
-    top: -10px;
-    left: -10px;
-    width: calc(100% + 20px);
-    height: calc(100% + 20px);
-    background: url('https://res.cloudinary.com/dncmrwppr/image/upload/v1704826511/image4_rd9qda.jpg') center center/cover no-repeat;
-    filter: blur(4px);
-    z-index: -1;
-  }

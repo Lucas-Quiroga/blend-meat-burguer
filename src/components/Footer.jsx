@@ -1,6 +1,6 @@
-import { CiMail } from "react-icons/ci";
+import { CiMail } from "react-icons/ci/index";
 import { InstagramIcon } from "../assets/icons/InstagramIcon";
-import { FaWhatsapp } from "react-icons/fa";
+import { FaWhatsapp } from "react-icons/fa/index";
 
 const footerData = [
   { label: "Inicio", href: "#inicio", ariaLabel: "Inicio" },
@@ -45,17 +45,16 @@ const socialMediaLinks = [
 
 export const Footer = () => {
   return (
-    <footer>
-      <section class="bg-customDarkBg1 ">
-        <div class="max-w-screen-xl px-4 py-12 mx-auto space-y-8 overflow-hidden sm:px-6 lg:px-8">
-          <nav class="flex flex-wrap justify-center -mx-5 -my-2">
+    <footer className="overflow-x-hidden overflow-y-hidden">
+      <section className="bg-customDarkBg1 ">
+        <div className="max-w-screen-xl px-4 py-12 mx-auto space-y-8 overflow-hidden sm:px-6 lg:px-8">
+          <nav className="flex flex-wrap justify-center -mx-5 -my-2">
             {footerData.map(({ href, label, ariaLabel }) => (
-              <div class="px-5 py-2">
+              <div className="px-5 py-2" key={label}>
                 <a
                   href={href}
                   aria-label={ariaLabel}
-                  key={label}
-                  class="text-base leading-6 text-white hover:text-gray-400"
+                  className="text-base leading-6 text-white hover:text-gray-400"
                 >
                   {label}
                 </a>
@@ -63,22 +62,22 @@ export const Footer = () => {
             ))}
           </nav>
 
-          <div class="flex justify-center mt-8 space-x-6 items-center mx-auto">
+          <div className="flex justify-center mt-8 space-x-6 items-center mx-auto">
             {socialMediaLinks.map(({ href, label, ariaLabel, icon }) => (
-              <>
-                <span class="sr-only">{label}</span>
+              <div key={label}>
+                <span className="sr-only">{label}</span>
                 <a
                   href={href}
                   aria-label={ariaLabel}
                   key={label}
-                  class="text-base leading-6 text-white hover:text-gray-400"
+                  className="text-base leading-6 text-white hover:text-gray-400"
                 >
                   {icon}
                 </a>
-              </>
+              </div>
             ))}
           </div>
-          <p class="mt-8 text-base leading-6 text-center text-gray-400">
+          <p className="mt-8 text-base leading-6 text-center text-gray-400">
             ©2024 MIT license. Matthew and Quiroga Lucas.
           </p>
         </div>

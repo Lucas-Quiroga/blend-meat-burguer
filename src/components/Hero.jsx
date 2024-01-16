@@ -6,7 +6,7 @@ import "../styles/Hero.css";
 export const Hero = () => {
   return (
     <section
-      className="flex h-screen bg-cover place-items-center justify-center items-center"
+      className="flex h-screen bg-cover place-items-center justify-center items-center overflow-x-hidden overflow-y-hidden"
       id="inicio"
     >
       <div className="w-full md:w-[800px] xl:w-[900px] flex flex-col justify-center items-center pt-16 md:pt-16 lg:pt-20 text-center">

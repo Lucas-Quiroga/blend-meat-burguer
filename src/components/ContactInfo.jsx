@@ -1,8 +1,8 @@
 import { motion } from "framer-motion";
-import { MdOutlineSmartphone } from "react-icons/md";
-import { FaInstagram } from "react-icons/fa6";
-import { CiLocationOn } from "react-icons/ci";
-import { CiMail } from "react-icons/ci";
+import { MdOutlineSmartphone } from "react-icons/md/index";
+import { FaInstagram } from "react-icons/fa6/index";
+import { CiLocationOn } from "react-icons/ci/index";
+import { CiMail } from "react-icons/ci/index";
 
 const contactData = [
   {
@@ -52,7 +52,7 @@ const ContactItem = ({ href, target, rel, Icon, title, description }) => (
 export const ContactInfo = () => {
   return (
     <section
-      className="bg-black items-center flex justify-end h-screen"
+      className="bg-black items-center flex justify-end h-screen w-screen overflow-x-hidden overflow-y-hidden"
       id="contacto"
     >
       <motion.div
@@ -78,7 +78,7 @@ export const ContactInfo = () => {
                 COMUNICATE CON <br /> NOSOTROS
               </span>
 
-              <div className="text-white mt-[5rem] flex flex-col gap-8 font-semibold text-xl lg:text-2xl mr-[10rem] md:mr-0">
+              <div className=" text-white mt-[5rem] flex flex-col gap-8 font-semibold text-xl lg:text-2xl mr-[10rem] md:mr-0">
                 {contactData.map((contact, index) => (
                   <ContactItem key={index} {...contact} />
                 ))}

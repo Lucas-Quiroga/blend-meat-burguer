@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
-import { BsCashCoin } from "react-icons/bs";
-import { SiMercadopago } from "react-icons/si";
-import { AiTwotoneBank } from "react-icons/ai";
+import { BsCashCoin } from "react-icons/bs/index";
+import { SiMercadopago } from "react-icons/si/index";
+import { AiTwotoneBank } from "react-icons/ai/index";
 
 const LOGO_URL =
   "https://res.cloudinary.com/dncmrwppr/image/upload/v1705005350/logo-removebg-preview_e0khrf.png";
@@ -14,7 +14,7 @@ const PaymentMethod = ({ Icon, name }) => (
 );
 
 export const PaymentMethods = () => (
-  <section className="py-12 sm:py-24 bg-white w-full mt-16 mb-16">
+  <section className="py-12 sm:py-24 bg-white w-full mt-16 mb-16 overflow-x-hidden overflow-y-hidden">
     <motion.div
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}

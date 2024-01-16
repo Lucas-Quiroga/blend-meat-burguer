@@ -36,7 +36,7 @@ const features = [
 export const Combos = () => {
   return (
     <section
-      className="bg-black relative h-screen w-full flex flex-col justify-center mx-auto items-center text-center"
+      className="bg-black relative h-screen w-full flex flex-col justify-center mx-auto items-center text-center overflow-x-hidden overflow-y-hidden"
       id="combos"
     >
       <div className="relative text-center mt-20">
@@ -66,13 +66,13 @@ export const Combos = () => {
           }}
           pagination={{ clickable: true }}
           modules={[EffectCoverflow, Pagination]}
-          className="relative mx-auto justify-center items-center flex"
+          className="relative justify-center items-center flex"
         >
-          <div className="flex justify-center items-center mx-auto">
+          <div className="flex justify-center items-center ">
             {features.map(({ title, combo, image }) => (
               <SwiperSlide
                 key={title}
-                className="max-w-md mx-auto justify-center items-center mt-20"
+                className="max-w-md justify-center items-center mt-20"
               >
                 <img
                   src={image}
@@ -87,7 +87,7 @@ export const Combos = () => {
             ))}
           </div>
         </Swiper>
-        <span className="text-white text-center mx-auto block mb-10 sm:mb-0">
+        <span className="text-white text-center mx-auto block mb-32 relative sm:mb-0">
           Desliza para conocer nuestros combos{" "}
         </span>
       </motion.div>

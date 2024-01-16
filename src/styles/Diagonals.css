@@ -1,5 +1,14 @@
 /* Hero */
 
+body::-webkit-scrollbar {
+  display: none;
+}
+
+body {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
 .custom-shape-divider-bottom-1665343298 {
   width: 100%;
   overflow: hidden;
